@@ -50,4 +50,4 @@ password - admin123
 
 ## Deployment
 
-Deployed uisng vercel
+Deployed uisng vercel and created a shareble link
