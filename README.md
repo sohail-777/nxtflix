@@ -14,3 +14,40 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+# NXTFLIX
+
+Nxtflix Application — a web-based movie streaming discovery app that allows users to browse, filter, and save movies to a Watch Later list.
+
+# Tech Stack
+
+React
+
+react Router DOM
+
+Vite
+
+js-cookie
+
+Node
+
+Plain CSS
+
+token
+
+## Getting Started 
+
+in power shell or bash:-
+
+npm install
+npm run dev
+
+## Test Credentials: -
+
+Email - admin@example.com
+password - admin123
+
+## Deployment
+
+Deployed uisng vercel
