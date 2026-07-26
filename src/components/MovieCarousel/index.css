@@ -1,0 +1,113 @@
+.carousel {
+    padding: 32px 0 8px;
+}
+
+.carousel__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    padding: 0 var(--side-pad);
+}
+
+.carousel__viewport{
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel__track{
+    display: flex;
+    gap: 12px;
+    width: max-content;
+    padding: 0 var(--side-pad);
+    animation-duration: 45s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.carousel__track--left{
+    animation-name: scroll-left;
+}
+
+.carousel__track--right{
+    animation-name: scroll-right;
+}
+
+.carousel__viewport:hover .carousel__track{
+    animation-play-state: paused;
+}
+
+.carousel__track:focus-within {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-left{
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-50% - 6px));
+    }
+}
+
+@keyframes scroll-right{
+    from{
+        transform: translateX(calc(-50% - 6px));
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.carousel__item {
+    position: relative;
+    flex: 0 0 auto;
+    width: 138px;
+    height: 195px;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    display: block;
+}
+
+.carousel__poster{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-med);
+}
+
+.carousel__item:hover .carousel__poster{
+    transform: scale(1.05);
+}
+
+.carousel__overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 18px 8px 8px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%);
+}
+
+.carousel__item-title{
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.carousel__item-meta{
+    font-size: 10px;
+    color: var(--color-text-muted);
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+    .carousel__track {
+        gap: 10px;
+    }
+}
