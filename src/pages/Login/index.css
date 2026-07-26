@@ -16,14 +16,18 @@
 
 .login__brand-glow {
   position: absolute;
-  inset: 0;
+  top: -20%;
+  left: -20%;
+  width: 90%;
+  height: 130%;
   background: radial-gradient(
-    650px 550px at 22% 22%,
-    rgba(229, 9, 20, 0.5) 0%,
-    rgba(229, 9, 20, 0.16) 45%,
-    transparent 72%
+    ellipse at 35% 30%,
+    rgba(229, 9, 20, 0.65) 0%,
+    rgba(229, 9, 20, 0.25) 35%,
+    transparent 68%
   );
   pointer-events: none;
+  filter: blur(10px);
 }
 
 .login__logo {
